@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>琉園tittot</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.tools.min.js"></script>
+<!--[if lte IE 8]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<script>
+//topnavi
+$(document).ready(function(){
+  $('#topnavi li:not(.subnavi li)').hover(function(){
+		 $(this).addClass('onhover');
+		 $(this).find('.subnavi').slideDown(300);
+	},
+  function () {
+    $('#topnavi li:not(.subnavi li)').removeClass('onhover');
+	$(this).find('.subnavi').slideUp(0);
+	});
+	
+	$('.subnavi li').hover(function(){
+		 $(this).addClass('subonhover');
+		},
+	  function () {
+		$('.subnavi li').removeClass('subonhover');
+		});
+});
+</script>
+<body id="about_us">
+	<nav id="topnavi">
+    	<ul>
+        	<li class="current"><a href="#">品牌故事</a>
+            	<!--子選單-->
+            	<div class="subnavi">
+                	<div class="inner clearfix">
+                	<div class="left">
+                        <ul>
+                        	<li class="current subonhover"><a href="about_us.html">關於琉園</a>
+                            	<!--子選單說明文字-->
+                            	<div class="subintro">
+                                	<div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_2.png">
+                                        <p>「tittot」是中文「剔透」的諧音，是中國文化最極致的讚嘆，也代表著琉園的精神。</p>
+                                    </div>
+                                </div>
+                            </li>
+                        	<li><a href="about_news.html">琉園新聞</a>
+                            	<!--子選單說明文字-->
+                            	<div class="subintro">
+                                	<div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_3.png">
+                                        <p>tittot琉園最新、最重要的訊息與動態，和完整的媒體報導。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="about_history.html">品牌大事記</a>
+                            	<!--子選單說明文字-->
+                            	<div class="subintro">
+                                	<div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_4.png">
+                                        <p>縱觀品牌歷史中，最重要的事件、對外展覽，或典藏紀錄。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="about_skill.html">精湛工藝</a>
+                            	<!--子選單說明文字-->
+                            	<div class="subintro">
+                                	<div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_5.png">
+                                        <p>需要經過全手工47道繁複流程的脫蠟鑄造工藝，展現tittot琉園對藝術的完美要求。</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="tittot.html">琉園萬象</a>
+            	<!--子選單-->
+            	<div class="subnavi">
+                	<div class="inner clearfix">
+                	<div class="left">
+                        <ul>
+                        	<li class="current1 subonhover"><a href="tittot_activity.html">最新活動</a>
+                            	<!--子選單說明文字-->
+                            	<div class="subintro">
+                                	<div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_7.png">
+                                        <p>最新品牌活動、藝文講座、展覽資訊、會員優惠......在此一覽。</p>
+                                    </div>
+                                </div>
+                            </li>
+                        	<li><a href="tittot_deco.html">tittot DECO</a>
+                            	<!--子選單說明文字-->
+                            	<div class="subintro">
+                                	<div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_8.png">
+                                        <p>以精湛工藝打造現代中國琉璃藝術品，期許帶給人們尊貴、喜悅、感動與力量。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="tittot_sharing.html">tittot sharing</a>
+                            	<!--子選單說明文字-->
+                            	<div class="subintro">
+                                	<div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_9.png">
+                                        <p>利落的設計結合實用的巧思，讓琉璃與情感的喜悅，更易於分享收藏。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="tittot_museum.html">琉園水晶博物館</a>
+                            	<!--子選單說明文字-->
+                            	<div class="subintro">
+                                	<div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_10.png">
+                                        <p>包含國際玻璃藝術展覽、玻璃創作教學，與許許多多玻璃故事的美麗園地。</p>
+                                    </div>
+                                </div>                         
+                            </li>
+                            <!--li><a href="tittot_bijoux.html">tittot Bijoux</a></li-->
+                            <!--li><a href="tittot_moment.html">tittot Moment</a></li-->
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="gallery.html">作品欣賞</a></li>
+            <li><a href="branch.html">服務據點</a></li>
+            <li><a href="#">客戶服務</a>
+            	<!--子選單-->
+            	<div class="subnavi">
+                	<div class="inner clearfix">
+                	<div class="left">
+                        <ul>
+                        	<li class="current1 subonhover"><a href="service.html">企業服務</a>
+                            	<!--子選單說明文字-->
+                            	<div class="subintro">
+                                	<div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_11.png">
+                                        <p>量身打造的精緻設計與貼心服務，為滿足每個企業與個人團體的需求。</p>
+                                    </div>
+                                </div>
+                            </li>
+                        	<li><a href="service_infor.html">tittot會員資訊</a>
+                           	<!--子選單說明文字-->
+                            	<div class="subintro">
+                                	<div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_12.png">
+                                        <p>佈告最新tittot會員的權益、資訊，與各種禮遇回饋。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="service_infor.html">tittot Q&amp;A</a>
+                           	<!--子選單說明文字-->
+                            	<div class="subintro">
+                                	<div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_13.png">
+                                        <p>完整的品牌服務解說、琉璃知識分享，與保養資訊。</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="divide user">|</li>
+            <li class="user"><a href="favorite.html">我的線上訂單</a></li>
+            <li class="user"><a href="contact.html">聯絡我們</a></li>
+        </ul>
+    </nav>
+	<header id="mainHeader" class="clearfix">
+     	<a href="index.html"><img src="images/logo.png"></a>
+    </header>
+	<section class="mainContainer clearfix">
+    	<div class="banner">
+        	<div class="imgHolder"><img src="images/innerheader_1.jpg"></div>
+        </div>
+        <artical>
+        <div class="wid500">
+        	<h1><img src="images/title_1.png" title="關於琉園"></h1>
+            <p>1994年，王永山與一群熱愛琉璃藝術的夥伴，抱持著「打開華人水晶玻璃世界」的夢想，創立了「tittot琉園」。「tittot」是中文「剔透」的諧音，「剔」蕪存菁、通「透」明亮，是中國文化對人、事、物最極致的讚嘆。</p>
+            <p>我們以中華文化的優美做為養分，以最能呈現精雕細工的脫臘鑄造技法，精緻、準確的詮釋出現代中國之美。每一件創作都是融合古今的設計。獨特、現代而不失傳統之風骨；平易近人但不媚俗；親切自然而不譁眾取寵，這正是琉園對琉璃藝術的堅持。</p>
+            <p>1999年，琉園創立兩岸三地第一座琉璃博物館「琉園水晶博物館」；2003年，琉園正式掛牌上櫃，是全臺灣第一家掛牌上櫃的文化創意產業。我們用自信打造新時代的價值，將琉璃藝術深深扎根於日常生活中。現今琉園已成為華人玻璃的代表，其作品亦屢獲國際重要展覽邀請展出，並廣被全世界各重要博物館典藏。</p>
+            <p>琉園不僅僅是創作，更將人文關懷與萬物祝福灌注於每一份作品之中，每一件都是獨一無二的生命。我們之後也將以無窮的創意與熱情，持續帶領華人的琉璃世界，在世界發光發熱。</p>
+        </div>
+        </artical>
+        <aside class="botside">
+        	<div  class="breadcrumbs">
+        	<p><a href="index.html">首頁</a> &gt; <span>品牌故事</span> &gt; <span>關於琉園</span></p>
+            </div>
+        </aside>
+    </section>
+    <footer>
+    	<div class="top clearfix">
+        	<ul>
+            	<li class="social" id="link_youtube"><a href="#"><img src="images/icon_youtube.png"></a></li>
+                <li class="social" id="link_fb"><a href="#"><img src="images/icon_fb.png"></a></li>
+                <li class="social" id="link_blog"><a href="#"><img src="images/icon_blog.png"></a></li>
+                <li class="social" id="link_weibo"><a href="#"><img src="images/icon_weibo.png"></a></li>
+                <li class="newpaper"><form><input type="email" name="user_email" placeholder="輸入信箱訂閱琉園電子報" class="textInput" /><input type="submit" value="訂閱" class="submitBtn" /></form></li>
+                <li class="link"><a href="#">求才專區</a></li>
+                <li class="link"><a href="#">股東服務</a></li>
+                <li class="link"><a href="copyright.html">隱私權聲明</a></li>
+                <li class="language current"><a href="#">正</a></li>
+            	<li class="language"><a href="#">简</a></li>
+                <li class="language"><a href="#">En</a></li>
+            </ul>
+        </div>
+        <div class="bot clearfix">
+        	 <h6>© 2013 琉園股份有限公司 版權所有</h6>
+             <hr size="1" noshade>
+       <p>台北永和總公司 ｜ 地址：新北市23452永和區成功路一段80號22樓 ｜ 電話：(886)2-7705-5168 ｜ 傳真：(886)2-7705-5188</p>
+             <p>上海琉園 ｜ 地址：上海市合肥215號3樓A區 ｜ 電話：(86021)6289-2498 / 3996-6968</p>
+             <p>北京琉園 ｜ 地址：北京市朝陽區廣渠路3號競園圖片產業基地29號 ｜ 電話：(86010)6566-9926</p>
+             <p>香港琉園 ｜ 地址：香港九龍大角嘴通州街123號國貿中心5樓E室 ｜ 電話：(86852)2397-3021</p>
+             <p>深圳琉園 ｜ 地址：深圳福田區彩田路和深南路交匯處嘉麟豪庭A樓501室 ｜ 電話：(86755)8258-1317</p>
+        </div>
+    </footer>
+</body>
+</html>

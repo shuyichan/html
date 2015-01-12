@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>琉園tittot</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.5">
+<link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.tools.min.js"></script>
+<script src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
+<script src="fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<!--[if lte IE 8]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<script>
+//topnavi
+$(document).ready(function(){
+  $('#topnavi li:not(.subnavi li)').hover(function(){
+         $(this).addClass('onhover');
+         $(this).find('.subnavi').slideDown(300);
+    },
+  function () {
+    $('#topnavi li:not(.subnavi li)').removeClass('onhover');
+    $(this).find('.subnavi').slideUp(0);
+    });
+    
+    $('.subnavi li').hover(function(){
+         $(this).addClass('subonhover');
+        },
+      function () {
+        $('.subnavi li').removeClass('subonhover');
+        });
+});
+
+
+$(function() {
+    // initialize scrollable with mousewheel support
+    $(".scrollable").scrollable({ 
+        vertical: true 
+        //mousewheel: true 
+    });
+});
+
+
+//fancybox
+$(document).ready(function() {
+    $(".fancybox-manual").click(function() {
+        $.fancybox.open([
+            {
+                href : 'images/indeximg_b1.jpg',
+                title : 'My title'
+            }, {
+                href : 'images/indeximg_b2.jpg',
+                title : '2nd title'
+            }, {
+                href : 'images/indeximg_b3.jpg',
+                title : '3nd title'
+            }
+        ], {
+            helpers : {
+                title : {
+                    type : 'inside'
+                },
+                thumbs : {
+                    width: 75,
+                    height: 50
+                }
+            }
+        });
+    });
+});
+</script>
+
+<body id="about_skill">
+    <nav id="topnavi" >
+        <ul>
+            <li class="current"><a href="#">品牌故事</a>
+                <!--子選單-->
+                <div class="subnavi">
+                    <div class="inner clearfix">
+                    <div class="left">
+                        <ul>
+                            <li><a href="about_us.html">關於琉園</a>
+                                <!--子選單說明文字-->
+                                <div class="subintro">
+                                    <div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_2.png">
+                                        <p>「tittot」是中文「剔透」的諧音，是中國文化最極致的讚嘆，也代表著琉園的精神。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="about_news.html">琉園新聞</a>
+                                <!--子選單說明文字-->
+                                <div class="subintro">
+                                    <div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_3.png">
+                                        <p>tittot琉園最新、最重要的訊息與動態，和完整的媒體報導。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="about_history.html">品牌大事記</a>
+                                <!--子選單說明文字-->
+                                <div class="subintro">
+                                    <div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_4.png">
+                                        <p>縱觀品牌歷史中，最重要的事件、對外展覽，或典藏紀錄。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="current subonhover"><a href="about_skill.html">精湛工藝</a>
+                                <!--子選單說明文字-->
+                                <div class="subintro">
+                                    <div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_5.png">
+                                        <p>需要經過全手工47道繁複流程的脫蠟鑄造工藝，展現tittot琉園對藝術的完美要求。</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="tittot.html">琉園萬象</a>
+                <!--子選單-->
+                <div class="subnavi">
+                    <div class="inner clearfix">
+                    <div class="left">
+                        <ul>
+                            <li class="current1 subonhover"><a href="tittot_activity.html">最新活動</a>
+                                <!--子選單說明文字-->
+                                <div class="subintro">
+                                    <div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_7.png">
+                                        <p>最新品牌活動、藝文講座、展覽資訊、會員優惠......在此一覽。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="tittot_deco.html">tittot DECO</a>
+                                <!--子選單說明文字-->
+                                <div class="subintro">
+                                    <div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_8.png">
+                                        <p>以精湛工藝打造現代中國琉璃藝術品，期許帶給人們尊貴、喜悅、感動與力量。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="tittot_sharing.html">tittot sharing</a>
+                                <!--子選單說明文字-->
+                                <div class="subintro">
+                                    <div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_9.png">
+                                        <p>利落的設計結合實用的巧思，讓琉璃與情感的喜悅，更易於分享收藏。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="tittot_museum.html">琉園水晶博物館</a>
+                                <!--子選單說明文字-->
+                                <div class="subintro">
+                                    <div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_10.png">
+                                        <p>包含國際玻璃藝術展覽、玻璃創作教學，與許許多多玻璃故事的美麗園地。</p>
+                                    </div>
+                                </div>                         
+                            </li>
+                            <!--li><a href="tittot_bijoux.html">tittot Bijoux</a></li-->
+                            <!--li><a href="tittot_moment.html">tittot Moment</a></li-->
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="gallery.html">作品欣賞</a></li>
+            <li><a href="branch.html">服務據點</a></li>
+            <li><a href="#">客戶服務</a>
+                <!--子選單-->
+                <div class="subnavi">
+                    <div class="inner clearfix">
+                    <div class="left">
+                        <ul>
+                            <li class="current1 subonhover"><a href="service.html">企業服務</a>
+                                <!--子選單說明文字-->
+                                <div class="subintro">
+                                    <div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_11.png">
+                                        <p>量身打造的精緻設計與貼心服務，為滿足每個企業與個人團體的需求。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="service_infor.html">tittot會員資訊</a>
+                            <!--子選單說明文字-->
+                                <div class="subintro">
+                                    <div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_12.png">
+                                        <p>佈告最新tittot會員的權益、資訊，與各種禮遇回饋。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="service_qa.html">tittot Q&amp;A</a>
+                            <!--子選單說明文字-->
+                                <div class="subintro">
+                                    <div class="middle">
+                                        <div class="imgHolder"><img src="images/subnavi_img_1.jpg"></div>
+                                    </div>
+                                    <div class="right">
+                                        <img src="images/subnavi_title_13.png">
+                                        <p>完整的品牌服務解說、琉璃知識分享，與保養資訊。</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="divide user">|</li>
+            <li class="user"><a href="favorite.html">我的線上訂單</a></li>
+            <li class="user"><a href="contact.html">聯絡我們</a></li>
+        </ul>
+
+    </nav>
+    <header id="mainHeader" class="clearfix">
+        <a href="index.html"><img src="images/logo.png"></a>
+    </header>
+    <section class="mainContainer clearfix">
+        <div class="banner">
+            <div class="imgHolder"><img src="images/innerheader_3.jpg"></div>
+        </div>
+        <artical>
+        <div  class="wid500">
+            <h1><img src="images/title_13.png" title="精湛工藝"></h1>
+            <p>脫蠟鑄造，是琉璃創作技法之一，國際間以脫蠟鑄造創作玻璃藝術創作者不乏其人，但因需經過47道手工流程才能呈現出作品之質感，所以大多為少量創作。琉園遵守傳統的技法，並以嶄新的技術突破製作的瓶頸，所以能使作品普及化，且更能精準完美的呈現琉璃之美，每件作品都是琉園工藝的極致展現。</p>
+            <p>琉園擁有全世界最大之水晶玻璃脫蠟精鑄廠，以最專業的態度，慢工細磨出琉璃的精神與溫潤的外型。這就是琉園對藝術、技術、質感的一絲不苟與完美要求。</p>
+            <br/>
+        </div>
+        </artical>
+        <artical>
+            <div class="inner">
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <div class="hoverwordl"><div class="num">1</div><div class="word"><h1>創意設計</h1> 將創作理念繪製成平面圖稿，同時規劃色彩流動的樣態。</div></div>
+                    <img src="images/about_skillimg_a1.jpg" class="before"><img src="images/about_skillimg_a1_hover.jpg" class="hover">
+                </a></div>
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <div class="hoverwordl"><div class="num">2</div><div class="word"><h1>原型製作</h1> 根據草圖，以土或蠟等材質雕塑成立體原型。原型的比例、線條都會影響到成品，每一筆一刀都必須極其精準細膩。</div></div>
+                    <img src="images/about_skillimg_a2.jpg" class="before"><img src="images/about_skillimg_a2_hover.jpg" class="hover">
+                </a></div>
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a3.jpg" class="before"><img src="images/about_skillimg_a3_hover.jpg" class="hover">
+                    <div class="hoverwordl"><div class="num">3</div><div class="word"><h1>製矽膠模</h1>在原型的表面塗上矽膠，脫模後再以石膏固定外型，製成矽膠陰模。由於造型細緻，常常在脫矽膠模時，原型就已損壞。</div></div>
+                </a></div>
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a4.jpg" class="before"><img src="images/about_skillimg_a4_hover.jpg" class="hover">
+                    <div class="hoverword"><div class="num">4</div><div class="word"><h1>翻樹酯模</h1>將樹酯灌入矽膠模，翻製成永久模型。樹脂材質的永久模型，便於保存，也方便翻製更多的矽膠陰模。</div></div>
+                </a></div>
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a5.jpg" class="before"><img src="images/about_skillimg_a5_hover.jpg" class="hover">
+                    <div class="hoverword"><div class="num">5</div><div class="word"><h1>固定陰模</h1> 重新將矽膠陰模固定，準備灌製蠟模。</div></div>
+                </a></div>
+                <div class="block" id="a2"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a6.jpg" class="before"><img src="images/about_skillimg_a6_hover.jpg" class="hover">
+                    <div class="hoverword"><div class="num">6</div><div class="word"><h1>灌製蠟模</h1> 在矽膠陰模內灌入調製蠟漿，待其自然冷卻。由於高溫灌製蠟模時，矽膠容易老化變形，故需要以前面步驟所製作的樹脂永久模型，翻製新的矽膠陰模。</div></div>
+                </a></div>    
+           <div class="left">                         
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a7.jpg" class="before"><img src="images/about_skillimg_a7_hover.jpg" class="hover">
+                    <div class="hoverwordl"><div class="num">7</div><div class="word"><h1>拆取蠟模</h1>將冷卻後的蠟模自矽膠石膏模中脫出，即成樣品的蠟模。其中鏤空與倒角的細節轉折處，在拆蠟時極易損壞，故必須細心、耐心的小心拆取。</div></div>
+                </a></div>
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a8.jpg" class="before"><img src="images/about_skillimg_a8_hover.jpg" class="hover">
+                    <div class="hoverwordl"><div class="num">8</div><div class="word"><h1>修整蠟模</h1>將蠟模的模線與因冷卻收縮變形的地方以工具修到完美。</div></div>
+                </a></div> 
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a9.jpg" class="before"><img src="images/about_skillimg_a9_hover.jpg" class="hover">
+                    <div class="hoverwordl"><div class="num">9</div><div class="word"><h1>製石膏模</h1> 調製耐火石膏，灌鑄在修飾後的蠟模外，成為含蠟石膏模。</div></div>
+                </a></div>  
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a11.jpg" class="before"><img src="images/about_skillimg_a11_hover.jpg" class="hover">
+                    <div class="hoverwordl"><div class="num">11</div><div class="word"><h1>精選原料</h1>根據設計圖挑選玻璃原料的大小與顏色，並細心清洗每一塊玻璃原料。</div></div>
+                </a></div>
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a12.jpg" class="before"><img src="images/about_skillimg_a12_hover.jpg" class="hover">
+                    <div class="hoverwordl"><div class="num">12</div><div class="word"><h1>配置原料</h1>為精確控制各種顏色的比例與流動的美感，需依造型與設計精準擺置玻璃原料的分佈位置。</div></div>
+                </a></div> 
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a13.jpg" class="before"><img src="images/about_skillimg_a13_hover.jpg" class="hover">
+                    <div class="hoverwordl"><div class="num">13</div><div class="word"><h1>進爐燒結</h1> 將整個石膏模與配置好的玻璃料，放進爐內慢慢加溫到850℃左右，玻璃原料成為如麥芽糖的膏狀，緩慢地流入石膏模內成型。</div></div>
+                </a></div>              
+            </div>
+            
+            <div class="center"> 
+               <div class="block" id="b1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_b1.jpg" class="before"><img src="images/about_skillimg_b1_hover.jpg" class="hover">
+                </a></div>       
+            </div>
+            
+            <div class="iright"> 
+                <div class="block" id="a2"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a10.jpg" class="before"><img src="images/about_skillimg_a10_hover.jpg" class="hover">
+                    <div class="hoverword"><div class="num">10</div><div class="word"><h1>蒸氣脫蠟</h1>將整個含蠟石膏模，置入脫蠟機內以蒸氣加溫脫蠟，脫蠟後即為耐火石膏陰模。</div></div>
+                </a></div>    
+                <div class="block" id="a2"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a14.jpg" class="before"><img src="images/about_skillimg_a14_hover.jpg" class="hover">
+                    <div class="hoverword"><div class="num">14</div><div class="word"><h1>徐冷降溫</h1>燒結過程中，為使玻璃內外均勻降溫，避免應力釋放不平均導致龜裂，需設定降溫曲線，經數天緩慢降溫。作品的造型不同，徐冷時間亦不同。</div></div>
+                </a></div>     
+            </div>
+  
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a15.jpg" class="before"><img src="images/about_skillimg_a15_hover.jpg" class="hover">
+                    <div class="hoverwordl"><div class="num">15</div><div class="word"><h1>拆石膏模</h1>徐冷過後從爐內取出，小心以刀具拆除石膏模，取得琉璃作品粗胚。</div></div>
+                </a></div>
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a16.jpg" class="before"><img src="images/about_skillimg_a16_hover.jpg" class="hover">
+                    <div class="hoverwordl"><div class="num">16</div><div class="word"><h1>斷面切割</h1>拆模後的琉璃粗胚，需斷面切割，去除注漿口部分多餘的玻璃。</div></div>
+                </a></div> 
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a17.jpg" class="before"><img src="images/about_skillimg_a17_hover.jpg" class="hover">
+                    <div class="hoverwordl"><div class="num">17</div><div class="word"><h1>粗磨細磨</h1>因切割斷面粗糙凹凸不平，需以粗、細研磨砂將琉璃之澆鑄口磨平、磨細，此時應特別注意將作品調整到最好的水平。</div></div>
+                </a></div>                                               
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a18.jpg" class="before"><img src="images/about_skillimg_a18_hover.jpg" class="hover">
+                    <div class="hoverword"><div class="num">18</div><div class="word"><h1>冷工細修</h1>針對作品細膩的部分，必須以鑽石筆頭及其他工具長時間的細心雕飾修整，使作品表面更均勻細緻。</div></div>
+                </a></div> 
+                <div class="block" id="a1"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a19.jpg" class="before"><img src="images/about_skillimg_a19_hover.jpg" class="hover">
+                    <div class="hoverword"><div class="num">19</div><div class="word"><h1>研磨刨光</h1>將作品放在布輪上，不斷重複地研磨及刨光，即可將琉璃的光澤透射出來，藉此呈現出材質晶透的質感。</div></div>
+                </a></div>                                               
+                <div class="block" id="a2"><a href="javascript:;"  class="fancybox-manual">
+                    <img src="images/about_skillimg_a20.jpg" class="before"><img src="images/about_skillimg_a20_hover.jpg" class="hover">
+                    <div class="hoverword"><div class="num">20</div><div class="word"><h1>簽字包裝</h1>最後確認作品完整後簽名簽號，再以緩衝材料包裝完成。</div></div>
+                </a></div>                                               
+            </div>
+        </artical>
+        <aside class="botside">
+            <div  class="breadcrumbs">
+            <p><a href="index.html">首頁</a> &gt; <span>品牌故事</span> &gt; <span>精湛工藝</span></p>
+            </div>
+        </aside>        
+    </section>
+    <footer>
+        <div class="top clearfix">
+            <ul>
+                <li class="social" id="link_youtube"><a href="#"><img src="images/icon_youtube.png"></a></li>
+                <li class="social" id="link_fb"><a href="#"><img src="images/icon_fb.png"></a></li>
+                <li class="social" id="link_blog"><a href="#"><img src="images/icon_blog.png"></a></li>
+                <li class="social" id="link_weibo"><a href="#"><img src="images/icon_weibo.png"></a></li>
+                <li class="newpaper"><form><input type="email" name="user_email" placeholder="輸入信箱訂閱琉園電子報" class="textInput" /><input type="submit" value="訂閱" class="submitBtn" /></form></form></li>
+                <li class="link"><a href="#">求才專區</a></li>
+                <li class="link"><a href="#">股東服務</a></li>
+                <li class="link"><a href="copyright.html">隱私權聲明</a></li>
+                <li class="language current"><a href="#">正</a></li>
+                <li class="language"><a href="#">简</a></li>
+                <li class="language"><a href="#">En</a></li>
+            </ul>
+        </div>
+        <div class="bot clearfix">
+             <h6>© 2013 琉園股份有限公司 版權所有</h6>
+             <hr size="1" noshade>
+       <p>台北永和總公司 ｜ 地址：新北市23452永和區成功路一段80號22樓 ｜ 電話：(886)2-7705-5168 ｜ 傳真：(886)2-7705-5188</p>
+             <p>上海琉園 ｜ 地址：上海市合肥215號3樓A區 ｜ 電話：(86021)6289-2498 / 3996-6968</p>
+             <p>北京琉園 ｜ 地址：北京市朝陽區廣渠路3號競園圖片產業基地29號 ｜ 電話：(86010)6566-9926</p>
+             <p>香港琉園 ｜ 地址：香港九龍大角嘴通州街123號國貿中心5樓E室 ｜ 電話：(86852)2397-3021</p>
+             <p>深圳琉園 ｜ 地址：深圳福田區彩田路和深南路交匯處嘉麟豪庭A樓501室 ｜ 電話：(86755)8258-1317</p>
+        </div>
+    </footer>
+</body>
+</html>
